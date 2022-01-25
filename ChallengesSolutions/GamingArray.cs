@@ -4,7 +4,8 @@
     {
 
         /// <summary>
-        /// HackerRank "Gaming Array" Problem
+        /// HackerRank "Gaming Array" Problem.
+        /// Solution not fully accepted as it runs out of time.
         /// found at https://www.hackerrank.com/challenges/an-interesting-game-1/problem
         /// </summary>
         /// <param name="gameSet"></param>
