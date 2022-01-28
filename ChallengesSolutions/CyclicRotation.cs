@@ -19,7 +19,23 @@
             }
 
             return reversed;
+        }
 
+        public static List<int> RotLeft(List<int> a, int d)
+        {
+            //int[] array1 = a.Take(d).Reverse().ToArray();
+            //int[] array2 = a.Skip(d).Take(a.Count - d + 1).Reverse().ToArray();
+            //return array1.Concat(array2).Reverse().ToList();
+
+            int[] reversed = new int[a.Count];
+            var max = a.Count - d;
+            for (int i = 0; i < a.Count; i++)
+            {
+                int position = (max + i) % a.Count;
+
+                reversed[position] = a[i];
+            }
+            return reversed.ToList();
         }
 
     }
