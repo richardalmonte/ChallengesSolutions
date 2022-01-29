@@ -113,5 +113,15 @@
             var A2 = Enumerable.Range(1, A.Length + 1);
             return A2.Except(A).First();
         }
+
+        public static int MissingInteger_SimpleCostly(int[] A)
+        {
+            int missing = 1;
+            while (A.Contains(missing))
+            {
+                missing++;
+            }
+            return missing;
+        }
     }
 }
