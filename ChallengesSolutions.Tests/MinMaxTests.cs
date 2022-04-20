@@ -12,8 +12,8 @@ namespace ChallengesSolutions
         public void MiniMaxSum_Test(int[] input, long expectedMin, long expectedMax)
         {
             var result = Problems.MiniMaxSum(input);
-            Assert.AreEqual(expectedMin, result[0]);
-            Assert.AreEqual(expectedMax, result[1]);
+            
+            CollectionAssert.AreEqual(new long[] { expectedMin, expectedMax }, result);
         }
     }
 }

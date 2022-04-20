@@ -12,10 +12,7 @@ namespace ChallengesSolutions
         public void CyclicRotation_Test(int[] input, int steps, int[] expected)
         {
             var actual = Problems.CyclicRotation(input, steps);
-            for (int i = 0; i < actual.Length; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            CollectionAssert.AreEqual(expected, actual);
         }
 
 
@@ -25,10 +22,7 @@ namespace ChallengesSolutions
         public void RotLeft_Test(int[] input, int steps, int[] expected)
         {
             var actual = Problems.RotLeft(input.ToList(), steps);
-            for (int i = 0; i < actual.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            CollectionAssert.AreEqual(expected, actual);
         }
 
     }
