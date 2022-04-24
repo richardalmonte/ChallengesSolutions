@@ -16,10 +16,7 @@ namespace ChallengesSolutions
         {
             var actual = Problems.GradingStudents(input.ToList());
 
-            for (int i = 0; i < actual.Count; i++)
-            {
-                Assert.AreEqual(expected[i], actual[i]);
-            }
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

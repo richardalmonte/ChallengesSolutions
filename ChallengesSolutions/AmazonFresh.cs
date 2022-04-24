@@ -25,7 +25,6 @@
 
             int groupIndex = 0;
             int codeIndex = 0;
-            int currCode = 0;
             for (int i = 0; i < shoppingCart.Count; i++)
             {
                 if (groupIndex == codeGroups.Count) break;
@@ -46,7 +45,7 @@
                 }
 
             }
-            return groupIndex == codeGroups.Count ? true : false;
+            return groupIndex == codeGroups.Count;
         }
 
         public static bool WinPrize(string[][] codeList, string[] shoppingCart)
@@ -78,7 +77,7 @@
                 j++;
 
             }
-            return (i == codeList.Length) ? true : false;
+            return i == codeList.Length;
         }
     }
 }

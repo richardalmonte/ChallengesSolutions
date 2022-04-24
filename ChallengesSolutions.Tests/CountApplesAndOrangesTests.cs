@@ -12,8 +12,7 @@ namespace ChallengesSolutions
         {
             var actual = Problems.CountApplesAndOranges(s, t, a, b, apples.ToList(), oranges.ToList());
 
-            Assert.AreEqual(expected[0], actual[0]);
-            Assert.AreEqual(expected[1], actual[1]);
+            CollectionAssert.AreEqual(expected, actual);            
         }
     }
 }
