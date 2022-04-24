@@ -22,12 +22,13 @@
                 codeGroups.Add(code.Split(',').ToList());
             }
 
-
             int groupIndex = 0;
             int codeIndex = 0;
             for (int i = 0; i < shoppingCart.Count; i++)
             {
-                if (groupIndex == codeGroups.Count) break;
+                if (groupIndex == codeGroups.Count)
+                    break;
+
                 var item = shoppingCart[i];
                 var codeTest = codeGroups[groupIndex][codeIndex];
                 if (codeTest == item || codeTest == "anything")
@@ -73,11 +74,48 @@
                     j += codeList[i].Length;
                     i++;
                 }
-
-                j++;
+                else
+                {
+                    j++;
+                }
 
             }
             return i == codeList.Length;
+        }
+
+        public static bool IsPromotionWinner(string[][] codeList, string[] shoppingCart)
+        {
+            if (codeList is null || codeList.Length < 1)
+                return true;
+
+            if (shoppingCart is null || shoppingCart.Length < 1)
+                return false;
+
+            int i = 0, j = 0;
+            while (i < codeList.Length && j + codeList[i].Length <= shoppingCart.Length)
+            {
+                bool match = true;
+                for (int k = 0; k < codeList[i].Length; k++)
+                {
+                    if (!codeList[i][k].Equals("anything") && !shoppingCart[j + k].Equals(codeList[i][k]))
+                    {
+                        match = false;
+                        break;
+                    }
+                }
+
+                if (match)
+                {
+                    j += codeList[i].Length;
+                    i++;
+                }
+                else
+                {
+                    j++;
+                }
+            }
+
+            return (i == codeList.Length);
         }
     }
 }
