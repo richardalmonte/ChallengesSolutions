@@ -6,7 +6,7 @@ namespace ChallengesSolutions
 {
     public partial class ProblemsTests
     {
-        //[TestMethod()]
+        //[TestMethod]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "orange", "apple", "apple", "banana", "orange", "banana" }, true)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "banana", "orange", "banana", "apple", "apple" }, false)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "apple", "banana", "apple", "banana", "orange", "banana" }, false)]
@@ -23,7 +23,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "orange", "apple", "apple", "banana", "orange", "banana" }, true)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "banana", "orange", "banana", "apple", "apple" }, false)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "apple", "banana", "apple", "banana", "orange", "banana" }, false)]
@@ -47,7 +47,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "orange", "apple", "apple", "banana", "orange", "banana" }, true)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "banana", "orange", "banana", "apple", "apple" }, false)]
         [DataRow(new string[] { "apple,apple", "banana,anything,banana" }, new string[] { "apple", "banana", "apple", "banana", "orange", "banana" }, false)]

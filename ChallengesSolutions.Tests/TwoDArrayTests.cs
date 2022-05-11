@@ -5,7 +5,7 @@ namespace ChallengesSolutions
 {
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new object[] {
             new int[] { -9, -9, -9, 1,1,1 },
             new int[] { 0,-9,0,4,3,2},

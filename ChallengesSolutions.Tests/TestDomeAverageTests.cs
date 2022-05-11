@@ -6,7 +6,7 @@ namespace ChallengesSolutions
 {
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(2, 2, 2)]
         [DataRow(2, 1, 1)]
         public void Average_Test(int a, int b, int expected)
@@ -17,7 +17,7 @@ namespace ChallengesSolutions
         }
 
 
-        [TestMethod()]
+        [TestMethod]
         public void FindTwoSum_Test()
         {
             List<int> list = new List<int> { 3, 1, 5, 7, 5, 9 };

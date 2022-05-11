@@ -6,7 +6,7 @@ namespace ChallengesSolutions
 
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 5, 2, 6, 3, 4 }, "ANDY")]
         [DataRow(new int[] { 3, 1 }, "BOB")]
         [DataRow(new int[] { 1, 3, 5, 7, 9 }, "BOB")]
@@ -279,7 +279,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, result);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 5, 2, 6, 3, 4 }, "ANDY")]
         [DataRow(new int[] { 3, 1 }, "BOB")]
         [DataRow(new int[] { 1, 3, 5, 7, 9 }, "BOB")]

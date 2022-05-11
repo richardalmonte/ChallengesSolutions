@@ -6,7 +6,7 @@ namespace ChallengesSolutions
  
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(100, "DUDUUUUUUUUDUDDUUDUUDDDUUDDDDDUUDUUUUDDDUUUUUUUDDUDUDUUUDDDDUUDDDUDDDDUUDDUDDUUUDUUUDUUDUDUDDDDDDDDD", 2)]
         [DataRow(12, "DDUUDDUDUUUD", 2)]
         [DataRow(10, "UDUUUDUDDD", 0)]

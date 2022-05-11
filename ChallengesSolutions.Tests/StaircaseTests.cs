@@ -4,7 +4,7 @@ namespace ChallengesSolutions
 {
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new string[] { "     #", "    ##","   ###", "  ####", " #####", "######" }, 6)]
         public void Staircase_Test(string[] expected, int input)
         {

@@ -5,7 +5,7 @@ namespace ChallengesSolutions
 {
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void MinPiecesTest()
         {
             int[] original = new int[] { 1, 4, 3, 2, };

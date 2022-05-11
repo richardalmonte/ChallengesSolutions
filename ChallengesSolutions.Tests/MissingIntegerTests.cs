@@ -5,7 +5,7 @@ namespace ChallengesSolutions
 
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 1, 3, 6, 4, 1, 2 }, 5)]
         [DataRow(new int[] { 1, 2, 3 }, 4)]
         [DataRow(new int[] { -1, -3 }, 1)]
@@ -16,7 +16,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 1, 3, 6, 4, 1, 2 }, 5)]
         [DataRow(new int[] { 1, 2, 3 }, 4)]
         [DataRow(new int[] { -1, -3 }, 1)]
@@ -27,7 +27,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 1, 3, 6, 4, 1, 2 }, 5)]
         [DataRow(new int[] { 1, 2, 3 }, 4)]
         [DataRow(new int[] { -1, -3 }, 1)]
@@ -38,7 +38,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 1, 3, 6, 4, 1, 2 }, 5)]
         [DataRow(new int[] { 1, 2, 3 }, 4)]
         [DataRow(new int[] { -1, -3 }, 1)]
@@ -49,7 +49,7 @@ namespace ChallengesSolutions
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 1, 3, 6, 4, 1, 2 }, 5)]
         [DataRow(new int[] { 1, 2, 3 }, 4)]
         [DataRow(new int[] { -1, -3 }, 1)]

@@ -5,7 +5,7 @@ namespace ChallengesSolutions
 
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(9, 2)]
         [DataRow(20, 1)]
         [DataRow(30, 0)]

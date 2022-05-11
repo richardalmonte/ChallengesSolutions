@@ -6,7 +6,7 @@ namespace ChallengesSolutions
 
     public partial class ProblemsTests
     {
-        [TestMethod()]
+        [TestMethod]
         [DataRow(new int[] { 0, 1, 0, 0, 0, 1, 0 }, 3)]
         [DataRow(new int[] { 0, 0, 1, 0, 0, 1, 0 }, 4)]
         [DataRow(new int[] { 0, 0, 0, 0, 1, 0 }, 3)]
