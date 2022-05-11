@@ -109,7 +109,7 @@
         /// <param name="A"></param>
         /// <returns></returns>
         public static int MissingInteger_Aim100(int[] A)
-        {
+        {            
             var A2 = Enumerable.Range(1, A.Length + 1);
             return A2.Except(A).First();
         }
