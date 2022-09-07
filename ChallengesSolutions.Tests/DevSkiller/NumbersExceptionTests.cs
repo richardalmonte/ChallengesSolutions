@@ -16,9 +16,25 @@ namespace InterviewZen.Tests
         {
             var sut = new NumbersException();
 
-            
+
             Assert.ThrowsException<InvalidOperationException>(sut.RemoveAndPrintNumbers);
 
+        }
+    }
+
+    [TestClass]
+    public class DevSkillersTests
+    {
+        [TestMethod]
+        public void RandomGuids_Test()
+        {
+            RandomGuid.Execute();
+        }
+
+        [TestMethod]
+        public void ThreadSection_Test()
+        {
+            ThreadSection.Execute();
         }
     }
 }
